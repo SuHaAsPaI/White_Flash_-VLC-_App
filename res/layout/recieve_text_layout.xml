@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recieved data........"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="304dp"
+        android:layout_height="370dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10sp" >
+
+            <TextView
+                android:id="@+id/tvnotify"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="11.45"
+                android:paddingLeft="10sp"
+                android:textSize="20sp" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/bstart_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start receiver " />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/bstop_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop receiver" />
+
+    </LinearLayout>
+
+</LinearLayout>

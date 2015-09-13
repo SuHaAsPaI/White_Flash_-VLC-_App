@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp" >
+
+    <TextView
+        android:id="@+id/tv_status_of_text_tx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TX ready" />
+
+    <EditText
+        android:id="@+id/et_tx_data_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your text here"
+        android:padding="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/b_transmit_text_now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="Transmit Data" />
+
+    <TextView
+        android:id="@+id/tv_breakuptext"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:text="Character transmission progress... " />
+
+	<ProgressBar
+	    android:id="@+id/progressBar1"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:indeterminate="false"
+	   />
+
+	<TextView
+	    android:id="@+id/textView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Binary transmission in progress.. " />
+
+	<ProgressBar
+	 android:id="@+id/progressBarFORBITS"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:indeterminate="false"
+	    
+	    />
+
+</LinearLayout>
